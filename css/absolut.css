@@ -1,0 +1,35 @@
+img{
+    width: 300px;
+    position: absolute;
+    top: -250px;
+    left: -90px;
+    z-index: 1;
+}
+
+section{
+    position: relative;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Playfair Display', Times, serif;
+    position: absolute;
+    z-index: 1000;
+    font-size: 50px;
+    left: 140px;
+    top: 120px;
+}
+
+a{
+    font-family: 'Open Sans', sans-serif;
+}
+

@@ -1,0 +1,190 @@
+@keyframes animationText {
+    0%{
+        width: 600px;
+    }
+    30%{
+        width: 400px;
+    }
+
+    57%{
+        width: 1500px;
+        background-color: tomato;
+    }
+    100%{
+        width: 1280px;
+    }
+}
+
+@keyframes scaleButton {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(4);
+    }
+    100%{
+        transform: scale(1);
+        background-color: yellow;
+    }
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    max-width: 1280px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    animation: animationText  5s;
+}
+
+nav a{
+    margin-right: 40px;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+
+header img{
+    width: 86px;
+}
+/* #enlaceNav{
+    margin-right: 0;
+} */
+#seccionUno, #seccionDos, #seccionTres{
+    margin: 0 auto;
+}
+
+#seccionUno{
+    display: flex;
+    width: 1020px;
+    justify-content: space-between;
+    align-items: center;
+    animation: animationText 10s;
+}
+
+.imgUno{
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#seccionUno div{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3, p{
+    padding-bottom: 32px;
+}
+
+h3{
+    font-family: 'Playfair Display', Times, serif;
+    font-size: 50px;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boton{
+    background-color: crimson;
+    color: #2B2F30;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid #2B2F30;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: teal;
+    animation: scaleButton 2s;
+    -webkit-animation: scaleButton 2s;
+    -moz-animation: scaleButton 2s;
+}
+
+#seccionDos{
+    margin-top: 60px;
+    margin-bottom: 68px;
+    background-image: url("../img/mateo-giraud-wtBex4wQw60-unsplash.jpg");
+    background-position: center;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+#seccionDos div{
+    width: 500px;
+    margin: 0 auto;
+}
+
+#seccionTres{
+    background-color: black;
+}
+
+#imgText{
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 48px;
+}
+
+#colorText{
+    width: 500px;
+    color: white;
+}
+
+footer{
+    background-color: #C4C4C4;
+}
+footer div{
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logoIronhackFooter{
+    width: 50px;
+    padding-top: 40px;
+    padding-bottom: 48px;
+}
+#parFooter{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 8px;
+}
+#colorAmor{
+    color: tomato;
+}
+#colorIronhack{
+    color: #2DC5FA;
+}
+
+@keyframes spiner {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.palmera{
+    animation: spiner 4s linear infinite;
+
+}
